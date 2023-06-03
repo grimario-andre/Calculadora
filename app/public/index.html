@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css\bootstrap\bootstrap.min.css">
+    <link rel="stylesheet" href="css\app.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Calculadora</h1>
+    </header>
+
+    <main>
+        <div class="calculator">
+            <input type="text" id="result" class="form-control mb-3" disabled>
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn btn-light btn-block" onclick="appendDigit('7')">7</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-light btn-block" onclick="appendDigit('8')">8</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn btn-light btn-block" onclick="appendDigit('4')">4</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-light btn-block" onclick="appendDigit('5')">5</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn btn-light btn-block" onclick="appendDigit('1')">1</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-light btn-block" onclick="appendDigit('2')">2</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn btn-light btn-block" onclick="appendDigit('0')">0</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-light btn-block" onclick="appendDecimal()">.</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn btn-primary btn-block" onclick="appendOperator('+')">+</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-primary btn-block" onclick="appendOperator('-')">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn btn-primary btn-block" onclick="appendOperator('*')">*</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-primary btn-block" onclick="appendOperator('/')">/</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-success btn-block" onclick="calculateResult()">=</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-danger btn-block" onclick="clearDisplay()">C</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Rodapé -->
+    <footer>
+        <div>
+          <p class="bg-primary text-white text-center py-3">&copy; <span id="currentYear"></span> - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    
+    <script src="js/app.js"></script>
+</body>
+
+</html>
