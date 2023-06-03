@@ -19,64 +19,64 @@
         <div class="calculator py-3">
             <input type="text" id="result" class="form-control mb-3" disabled>
             <div class="row">
-                <div class="col-6">
-                    <button class="btn btn-light btn-block" onclick="appendDigit('7')">7</button>
-                </div>
-                <div class="col-6">
-                    <button class="btn btn-light btn-block" onclick="appendDigit('8')">8</button>
-                </div>
+              <div class="col-6">
+                <button class="btn btn-light btn-block" onclick="appendValue('7')">7</button>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-light btn-block" onclick="appendValue('8')">8</button>
+              </div>
             </div>
             <div class="row">
-                <div class="col-6">
-                    <button class="btn btn-light btn-block" onclick="appendDigit('4')">4</button>
-                </div>
-                <div class="col-6">
-                    <button class="btn btn-light btn-block" onclick="appendDigit('5')">5</button>
-                </div>
+              <div class="col-6">
+                <button class="btn btn-light btn-block" onclick="appendValue('4')">4</button>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-light btn-block" onclick="appendValue('5')">5</button>
+              </div>
             </div>
             <div class="row">
-                <div class="col-6">
-                    <button class="btn btn-light btn-block" onclick="appendDigit('1')">1</button>
-                </div>
-                <div class="col-6">
-                    <button class="btn btn-light btn-block" onclick="appendDigit('2')">2</button>
-                </div>
+              <div class="col-6">
+                <button class="btn btn-light btn-block" onclick="appendValue('1')">1</button>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-light btn-block" onclick="appendValue('2')">2</button>
+              </div>
             </div>
             <div class="row">
-                <div class="col-6">
-                    <button class="btn btn-light btn-block" onclick="appendDigit('0')">0</button>
-                </div>
-                <div class="col-6">
-                    <button class="btn btn-light btn-block" onclick="appendDecimal()">.</button>
-                </div>
+              <div class="col-6">
+                <button class="btn btn-light btn-block" onclick="appendValue('0')">0</button>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-light btn-block" onclick="appendDecimal()">.</button>
+              </div>
             </div>
             <div class="row">
-                <div class="col-6">
-                    <button class="btn btn-primary btn-block" onclick="appendOperator('+')">+</button>
-                </div>
-                <div class="col-6">
-                    <button class="btn btn-primary btn-block" onclick="appendOperator('-')">-</button>
-                </div>
+              <div class="col-6">
+                <button class="btn btn-primary btn-block" onclick="appendOperator('+')">+</button>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-primary btn-block" onclick="appendOperator('-')">-</button>
+              </div>
             </div>
             <div class="row">
-                <div class="col-6">
-                    <button class="btn btn-primary btn-block" onclick="appendOperator('*')">*</button>
-                </div>
-                <div class="col-6">
-                    <button class="btn btn-primary btn-block" onclick="appendOperator('/')">/</button>
-                </div>
+              <div class="col-6">
+                <button class="btn btn-primary btn-block" onclick="appendOperator('*')">*</button>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-primary btn-block" onclick="appendOperator('/')">/</button>
+              </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <button class="btn btn-success btn-block" onclick="calculateResult()">=</button>
-                </div>
+              <div class="col-12">
+                <button class="btn btn-success btn-block" onclick="calculate()">=</button>
+              </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <button class="btn btn-danger btn-block" onclick="clearDisplay()">C</button>
-                </div>
+              <div class="col-12">
+                <button class="btn btn-danger btn-block" onclick="clearCalculator()">C</button>
+              </div>
             </div>
-        </div>
+          </div>
     </main>
 
 
